@@ -83,7 +83,7 @@ public class LoanService {
 		return new ResponseEntity<ResponseStructure<Loan>>(structure, HttpStatus.OK);
 	}
 
-	// delete loan
+	//delete loan
 	public ResponseEntity<ResponseStructure<Loan>> deleteLoan(int id) {
 		Optional<Loan> opt = loanDao.getLoanById(id);
 
